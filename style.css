@@ -1,0 +1,56 @@
+* {
+  margin: 2% 0 0 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  cursor: default;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+}
+
+label {
+  font-size: 18px;
+}
+
+.numberValue {
+  width: 100px;
+  padding: 2.5px;
+  margin: 10px;
+  border: 1px rgba(0, 0, 0, .5) solid;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.submitBtn {
+  padding: 5px;
+  border: 1px rgba(0, 0, 0, .1) solid;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.tableContainer {
+  height: 420px;
+  padding: 5px 15px 5px 15px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.showContainer { /* ! toogle container */
+  display: none;
+}
