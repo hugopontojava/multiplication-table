@@ -8,15 +8,19 @@ btn.addEventListener('click', function (num) {
     for (i = 1; i <= 10; i++) {
       num = input.value;
       const result = num * i;
-      
-      // if (tableDiv.children >= 0) {
-        // ? tableDiv.replaceChildren()
-      // }
-      const p = document.createElement('p');
-        tableDiv.appendChild(p);
-      const tablePattern = document.createTextNode(`${num} X ${i} = ${result}`);
-        p.appendChild(tablePattern);
-        div.classList.remove('showContainer');
+        function showResult() {
+          const p = document.createElement('p');
+            tableDiv.appendChild(p);
+          const tablePattern = document.createTextNode(`${num} X ${i} = ${result}`);
+            p.appendChild(tablePattern);
+            div.classList.remove('showContainer');
+        }
+      if (tableDiv.childNodes.length == 10) {
+        tableDiv.replaceChildren();
+        showResult();
+      } else {
+          showResult();
+        }
     } 
   } else {
       alert('Need to be a number higher then 0!');
